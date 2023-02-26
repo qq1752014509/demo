@@ -1,0 +1,21 @@
+server:
+  port: 8010
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: demo
+  servlet:
+    context-path: /restful-demo
+  web:
+    resources:
+      static-locations: classpath:/static/
+
+
+debug: false
+log:
+  dir: ./logs
+logging:
+  file:
+    path: ${log.dir}/${spring.application.name}
